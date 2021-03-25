@@ -11,6 +11,7 @@ forename varchar(255) NOT NULL,
 surname varchar(255) NOT NULL,
 username varchar(255) NOT NULL,
 expertise varchar(255) NOT NULL
+CONSTRAINT CHK_vlogger CHECK(username = 6 AND expertise = 'programming', 'Gaming', 'baking', 'crafts', 'makeup', 'clothes');
 
 
 /* Adding validation to the table from the datadictionary*/
